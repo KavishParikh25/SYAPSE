@@ -1,0 +1,12 @@
+.database-tables-container {
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.schema-mapping-container {
+  height: 100vh;
+}
