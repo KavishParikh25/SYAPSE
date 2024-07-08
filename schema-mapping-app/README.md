@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+Schema Mapping Application
+This project implements a schema mapping tool using React and React Flow for visual representation.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Database Table Component
 
-## Available Scripts
+Allows users to add columns to database tables dynamically.
+Schema Mapping Component
 
-In the project directory, you can run:
+Visualizes mappings between source and target columns.
+Supports dynamic addition and deletion of mappings.
+Displays active mappings in green and overridden mappings in red.
+Override Button Component
 
-### `npm start`
+Allows users to toggle between active and overridden states for mappings.
+Components
+DatabaseTable Component
+The DatabaseTable component allows adding columns to database tables dynamically.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+SchemaMapping Component
+The SchemaMapping component visualizes schema mappings between source and target columns using React Flow.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+OverrideButton Component
+The OverrideButton component provides a button to toggle mapping override states.
 
-### `npm test`
+Usage
+To use this application:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone Repository
 
-### `npm run build`
+bash
+Copy code
+git clone <repository-url>
+cd <repository-directory>
+Install Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Copy code
+npm install
+Run the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+sql
+Copy code
+npm start
+Getting Started
+Ensure you have Node.js and npm installed on your machine. Follow these steps to get started:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install Node.js and npm:
 
-### `npm run eject`
+Download and install Node.js from nodejs.org.
+npm is included with Node.js installation.
+Clone the Repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy code
+git clone <repository-url>
+cd <repository-directory>
+Install Dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Copy code
+npm install
+Run the Application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+sql
+Copy code
+npm start
+File Structure
+csharp
+Copy code
+├── public
+│   ├── favicon.ico
+│   ├── logo192.png
+│   └── manifest.json
+├── src
+│   ├── components
+│   │   ├── DatabaseTable.js
+│   │   ├── OverrideButton.js
+│   │   └── SchemaMapping.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock
+Dependencies
+React
+React Flow Renderer
+Material-UI
+Contributing
+Contributions are welcome! Please feel free to submit pull requests.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize the README further based on additional features, configuration details, or setup instructions specific to your project.

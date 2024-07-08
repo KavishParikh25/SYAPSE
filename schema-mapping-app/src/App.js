@@ -30,6 +30,12 @@ function App() {
     setOverride(!override);
   };
 
+  const handleNodeDelete = (deletedNodeId) => {
+    // Update mappings or handle any other necessary logic
+    const updatedMappings = mappings.filter((edge) => edge.source !== deletedNodeId && edge.target !== deletedNodeId);
+    setMappings(updatedMappings);
+  };
+
   return (
     <Container>
       <Grid container spacing={2}>
@@ -49,10 +55,11 @@ function App() {
             override={override}
             sourceColumns={sourceColumns}
             targetColumns={targetColumns}
+            onNodeDelete={handleNodeDelete}
           />
         </Grid>
       </Grid>
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+      <div style={{ position: 'absolute', top: '77px', right: '77px' }}>
         <OverrideButton onClick={handleOverride} />
       </div>
     </Container>
@@ -60,3 +67,4 @@ function App() {
 }
 
 export default App;
+
